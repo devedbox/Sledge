@@ -5,4 +5,8 @@
 //  Created by devedbox on 2018/3/12.
 //
 
-import Foundation
+// MARK: - SemanticVersionable.
+
+public protocol SemanticVersionable {
+    
+}
