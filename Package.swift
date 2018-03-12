@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "Sledge",
             targets: ["Sledge"]),
+        .library(
+            name: "SemVer",
+            targets: ["SemVer"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +24,10 @@ let package = Package(
         .target(
             name: "Sledge",
             dependencies: []),
+        .target(
+            name: "SemVer",
+            dependencies: [],
+            path: "Sources/SemVer"),
         .testTarget(
             name: "SledgeTests",
             dependencies: ["Sledge"]),
