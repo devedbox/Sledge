@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::SafeAccessible"
+               BuildableName = "SafeAccessible.framework"
+               BlueprintName = "SafeAccessible"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Sledge::Sledge"
                BuildableName = "Sledge.framework"
                BlueprintName = "Sledge"
