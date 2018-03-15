@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "SemVer",
             targets: ["SemVer"]),
+        .library(
+            name: "SafeAccessible",
+            targets: ["SafeAccessible"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -28,6 +31,10 @@ let package = Package(
             name: "SemVer",
             dependencies: [],
             path: "Sources/SemVer"),
+        .target(
+            name: "SafeAccessible",
+            dependencies: [],
+            path: "Sources/SafeAccessible"),
         .testTarget(
             name: "SledgeTests",
             dependencies: ["Sledge"]),

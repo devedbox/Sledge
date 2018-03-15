@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		DC1EC16A2056CE03001C0369 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
+		DC1EC16D205AC421001C0369 /* SafeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessible.swift; sourceTree = "<group>"; };
 		OBJ_14 /* SledgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SledgeTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Sledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sledge.swift; sourceTree = "<group>"; };
@@ -81,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1EC16C205AC3BE001C0369 /* SafeAccessible */ = {
+			isa = PBXGroup;
+			children = (
+				DC1EC16D205AC421001C0369 /* SafeAccessible.swift */,
+			);
+			name = SafeAccessible;
+			path = Sources/SafeAccessible;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* SemVer */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +127,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -125,12 +135,12 @@
 				OBJ_12 /* Tests */,
 				OBJ_15 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DC1EC16C205AC3BE001C0369 /* SafeAccessible */,
 				OBJ_8 /* Sledge */,
 				OBJ_10 /* SemVer */,
 			);
@@ -232,7 +242,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
