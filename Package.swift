@@ -38,5 +38,9 @@ let package = Package(
         .testTarget(
             name: "SledgeTests",
             dependencies: ["Sledge"]),
+        .testTarget(
+            name: "SafeAccessibleTests",
+            dependencies: ["SafeAccessible"],
+            path: "Tests/SafeAccessibleTests"),
     ]
 )

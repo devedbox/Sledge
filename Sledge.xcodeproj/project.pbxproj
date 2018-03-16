@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		DC1EC172205AC7C8001C0369 /* SafeIndexable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeIndexable.swift; sourceTree = "<group>"; };
+		DC1EC175205C12D9001C0369 /* SafeAccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessibleTests.swift; sourceTree = "<group>"; };
 		DCA11D43205BB2FC00EB87D9 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SafeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessible.swift; sourceTree = "<group>"; };
 		OBJ_13 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
@@ -95,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1EC174205C12B9001C0369 /* SafeAccessibleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC1EC175205C12D9001C0369 /* SafeAccessibleTests.swift */,
+			);
+			path = SafeAccessibleTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_10 /* SafeAccessible */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +127,7 @@
 		OBJ_14 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DC1EC174205C12B9001C0369 /* SafeAccessibleTests */,
 				OBJ_15 /* SledgeTests */,
 			);
 			name = Tests;

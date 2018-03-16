@@ -41,7 +41,7 @@ public protocol SafeIndexable {
 
 // MARK: - SafeIndex.
 
-public struct SafeIndex<Base: Comparable>: IndexConvertible {
+public struct AnySafeIndex<Base: Comparable>: IndexConvertible {
     public typealias Index = Base
     /// The underlying storage of the index value.
     private var _index: Base
@@ -51,12 +51,12 @@ public struct SafeIndex<Base: Comparable>: IndexConvertible {
     }
 }
 
-extension SafeIndex {
-    public static func <(lhs: SafeIndex<Base>, rhs: SafeIndex<Base>) -> Bool {
+extension AnySafeIndex {
+    public static func <(lhs: AnySafeIndex<Base>, rhs: AnySafeIndex<Base>) -> Bool {
         return lhs._index < rhs._index
     }
     
-    public static func ==(lhs: SafeIndex<Base>, rhs: SafeIndex<Base>) -> Bool {
+    public static func ==(lhs: AnySafeIndex<Base>, rhs: AnySafeIndex<Base>) -> Bool {
         return lhs._index == rhs._index
     }
 }

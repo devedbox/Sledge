@@ -13,9 +13,12 @@ public enum SafeCollectionError: Error {
 
 /// A protocol represents a collection can be accessible safely.
 public protocol SafeCollectionProtocol: SafeIndexable, Collection
-where Elements.Iterator == Self.Iterator, SafeIndex.Index == Self.Index {
+where SafeIndex.Index == Self.Index {
     /// Elements type.
-    associatedtype Elements: Collection where Self.SubSequence == Self.Elements
+    associatedtype Elements: Collection = Self
+    where
+    Elements.Iterator == Self.Iterator,
+    Elements.Index == Self.Index
     /// Returns the elements of the `Elements`.
     var elements: Elements { get }
 }
@@ -29,29 +32,6 @@ extension SafeCollectionProtocol where Elements == Self {
 extension SafeCollectionProtocol {
     public func makeIterator() -> Self.Iterator {
         return elements.makeIterator()
-    }
-}
-
-extension SafeCollectionProtocol {
-    /// The start index of the safe collection.
-    public var startIndex: Self.Index {
-        return elements.startIndex
-    }
-    /// The end index of the safe collection.
-    public var endIndex: Self.Index {
-        return elements.endIndex
-    }
-    
-    public func index(after i: Self.Index) -> Self.Index {
-        return elements.index(after: i)
-    }
-    
-    public subscript(position: Self.Index) -> Self.Element {
-        return elements[position]
-    }
-    
-    public subscript(bounds: Range<Self.Index>) -> Self.SubSequence {
-        return elements[bounds]
     }
 }
 
@@ -80,10 +60,25 @@ extension SafeCollectionProtocol {
 // MARK: - SafeCollection.
 
 public struct SafeCollection<Base: Collection>: SafeCollectionProtocol {
-    public typealias SafeIndex = <#type#>
+    public typealias Iterator = Base.Iterator
+    public func index(after i: Base.Index) -> Base.Index {
+        return elements.index(after: i)
+    }
+    
+    public subscript(position: Base.Index) -> Base.Element {
+        return elements[position]
+    }
+    
+    public var startIndex: Base.Index {
+        return elements.startIndex
+    }
+    
+    public var endIndex: Base.Index {
+        return elements.endIndex
+    }
     
     public typealias Index = Base.Index
-    public typealias IndexValue = SafeIndex<Base.Index>
+    public typealias SafeIndex = AnySafeIndex<Index>
     public typealias SubSequence = Base.SubSequence
     public typealias Elements = Base
     public typealias Element = Elements.Element
@@ -92,5 +87,21 @@ public struct SafeCollection<Base: Collection>: SafeCollectionProtocol {
     
     public var elements: Elements {
         return _elements
+    }
+    
+    public init(_ elements: Elements) {
+        _elements = elements
+    }
+}
+
+extension Collection {
+    public var safe: SafeCollection<Self> {
+        return SafeCollection<Self>(self)
+    }
+}
+
+extension Collection where Self: SafeCollectionProtocol {
+    public var safe: Self {
+        return self
     }
 }
