@@ -67,6 +67,16 @@
                ReferencedContainer = "container:Sledge.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::SafeAccessibleTests"
+               BuildableName = "SafeAccessibleTests.xctest"
+               BlueprintName = "SafeAccessibleTests"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>

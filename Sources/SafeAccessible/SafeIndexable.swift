@@ -49,7 +49,21 @@ public struct AnySafeIndex<Base: Comparable>: IndexConvertible {
     public func asIndex() throws -> Index {
         return _index
     }
+    
+    public init(_ indexValue: Base) {
+        _index = indexValue
+    }
 }
+
+// MARK: - Convenience.
+
+extension AnySafeIndex {
+    public static func safe<T: Comparable>(_ t: T) -> AnySafeIndex<T> {
+        return AnySafeIndex<T>(t)
+    }
+}
+
+// MARK: - Comparable Conforming.
 
 extension AnySafeIndex {
     public static func <(lhs: AnySafeIndex<Base>, rhs: AnySafeIndex<Base>) -> Bool {

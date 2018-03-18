@@ -9,11 +9,12 @@
 /* Begin PBXAggregateTarget section */
 		"Sledge::SledgePackageTests::ProductTarget" /* SledgePackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_59 /* Build configuration list for PBXAggregateTarget "SledgePackageTests" */;
+			buildConfigurationList = OBJ_75 /* Build configuration list for PBXAggregateTarget "SledgePackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_62 /* PBXTargetDependency */,
+				OBJ_78 /* PBXTargetDependency */,
+				OBJ_79 /* PBXTargetDependency */,
 			);
 			name = SledgePackageTests;
 			productName = SledgePackageTests;
@@ -21,25 +22,41 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DC1EC173205AC7C8001C0369 /* SafeIndexable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EC172205AC7C8001C0369 /* SafeIndexable.swift */; };
-		DCA11D44205BB2FC00EB87D9 /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA11D43205BB2FC00EB87D9 /* SafeCollection.swift */; };
-		OBJ_27 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_33 /* SledgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SledgeTests.swift */; };
-		OBJ_35 /* Sledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::Sledge::Product" /* Sledge.framework */; };
-		OBJ_43 /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SemVer.swift */; };
-		OBJ_50 /* SafeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SafeAccessible.swift */; };
-		OBJ_56 /* Sledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Sledge.swift */; };
+		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_38 /* SledgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SledgeTests.swift */; };
+		OBJ_40 /* Sledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::Sledge::Product" /* Sledge.framework */; };
+		OBJ_48 /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* SemVer.swift */; };
+		OBJ_55 /* SafeAccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SafeAccessibleTests.swift */; };
+		OBJ_57 /* SafeAccessible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::SafeAccessible::Product" /* SafeAccessible.framework */; };
+		OBJ_64 /* SafeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SafeAccessible.swift */; };
+		OBJ_65 /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SafeCollection.swift */; };
+		OBJ_66 /* SafeIndexable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SafeIndexable.swift */; };
+		OBJ_72 /* Sledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Sledge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC1EC16E205AC44C001C0369 /* PBXContainerItemProxy */ = {
+		DC1EC176205C131E001C0369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sledge::Sledge";
 			remoteInfo = Sledge;
 		};
-		DC1EC16F205AC44D001C0369 /* PBXContainerItemProxy */ = {
+		DC1EC177205C131E001C0369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Sledge::SafeAccessible";
+			remoteInfo = SafeAccessible;
+		};
+		DC1EC178205C131E001C0369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Sledge::SafeAccessibleTests";
+			remoteInfo = SafeAccessibleTests;
+		};
+		DC1EC179205C131E001C0369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -49,44 +66,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC1EC172205AC7C8001C0369 /* SafeIndexable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeIndexable.swift; sourceTree = "<group>"; };
-		DC1EC175205C12D9001C0369 /* SafeAccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessibleTests.swift; sourceTree = "<group>"; };
-		DCA11D43205BB2FC00EB87D9 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SafeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessible.swift; sourceTree = "<group>"; };
-		OBJ_13 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
-		OBJ_16 /* SledgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SledgeTests.swift; sourceTree = "<group>"; };
+		OBJ_12 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
+		OBJ_13 /* SafeIndexable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeIndexable.swift; sourceTree = "<group>"; };
+		OBJ_15 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
+		OBJ_18 /* SafeAccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessibleTests.swift; sourceTree = "<group>"; };
+		OBJ_20 /* SledgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SledgeTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Sledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sledge.swift; sourceTree = "<group>"; };
-		"Sledge::SafeAccessible::Product" /* SafeAccessible.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafeAccessible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sledge::SafeAccessible::Product" /* SafeAccessible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SafeAccessible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sledge::SafeAccessibleTests::Product" /* SafeAccessibleTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SafeAccessibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::SemVer::Product" /* SemVer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SemVer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::Sledge::Product" /* Sledge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sledge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::SledgeTests::Product" /* SledgeTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SledgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_34 /* Frameworks */ = {
+		OBJ_39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_35 /* Sledge.framework in Frameworks */,
+				OBJ_40 /* Sledge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_51 /* Frameworks */ = {
+		OBJ_49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_57 /* Frameworks */ = {
+		OBJ_56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_57 /* SafeAccessible.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -96,71 +122,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC1EC174205C12B9001C0369 /* SafeAccessibleTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC1EC175205C12D9001C0369 /* SafeAccessibleTests.swift */,
-			);
-			path = SafeAccessibleTests;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_10 /* SafeAccessible */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* SafeAccessible.swift */,
-				DC1EC172205AC7C8001C0369 /* SafeIndexable.swift */,
-				DCA11D43205BB2FC00EB87D9 /* SafeCollection.swift */,
+				OBJ_12 /* SafeCollection.swift */,
+				OBJ_13 /* SafeIndexable.swift */,
 			);
 			name = SafeAccessible;
 			path = Sources/SafeAccessible;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_12 /* SemVer */ = {
+		OBJ_14 /* SemVer */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* SemVer.swift */,
+				OBJ_15 /* SemVer.swift */,
 			);
 			name = SemVer;
 			path = Sources/SemVer;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* Tests */ = {
+		OBJ_16 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DC1EC174205C12B9001C0369 /* SafeAccessibleTests */,
-				OBJ_15 /* SledgeTests */,
+				OBJ_17 /* SafeAccessibleTests */,
+				OBJ_19 /* SledgeTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* SledgeTests */ = {
+		OBJ_17 /* SafeAccessibleTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* SledgeTests.swift */,
+				OBJ_18 /* SafeAccessibleTests.swift */,
+			);
+			name = SafeAccessibleTests;
+			path = Tests/SafeAccessibleTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* SledgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* SledgeTests.swift */,
 			);
 			name = SledgeTests;
 			path = Tests/SledgeTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_17 /* Products */ = {
+		OBJ_21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"Sledge::SledgeTests::Product" /* SledgeTests.xctest */,
 				"Sledge::SemVer::Product" /* SemVer.framework */,
+				"Sledge::SafeAccessibleTests::Product" /* SafeAccessibleTests.xctest */,
 				"Sledge::SafeAccessible::Product" /* SafeAccessible.framework */,
 				"Sledge::Sledge::Product" /* Sledge.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_14 /* Tests */,
-				OBJ_17 /* Products */,
+				OBJ_16 /* Tests */,
+				OBJ_21 /* Products */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -168,7 +197,7 @@
 			children = (
 				OBJ_8 /* Sledge */,
 				OBJ_10 /* SafeAccessible */,
-				OBJ_12 /* SemVer */,
+				OBJ_14 /* SemVer */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -187,10 +216,10 @@
 /* Begin PBXNativeTarget section */
 		"Sledge::SafeAccessible" /* SafeAccessible */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_46 /* Build configuration list for PBXNativeTarget "SafeAccessible" */;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXNativeTarget "SafeAccessible" */;
 			buildPhases = (
-				OBJ_49 /* Sources */,
-				OBJ_51 /* Frameworks */,
+				OBJ_63 /* Sources */,
+				OBJ_67 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,12 +230,29 @@
 			productReference = "Sledge::SafeAccessible::Product" /* SafeAccessible.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		"Sledge::SafeAccessibleTests" /* SafeAccessibleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_51 /* Build configuration list for PBXNativeTarget "SafeAccessibleTests" */;
+			buildPhases = (
+				OBJ_54 /* Sources */,
+				OBJ_56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_58 /* PBXTargetDependency */,
+			);
+			name = SafeAccessibleTests;
+			productName = SafeAccessibleTests;
+			productReference = "Sledge::SafeAccessibleTests::Product" /* SafeAccessibleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		"Sledge::SemVer" /* SemVer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "SemVer" */;
+			buildConfigurationList = OBJ_44 /* Build configuration list for PBXNativeTarget "SemVer" */;
 			buildPhases = (
-				OBJ_42 /* Sources */,
-				OBJ_44 /* Frameworks */,
+				OBJ_47 /* Sources */,
+				OBJ_49 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,10 +265,10 @@
 		};
 		"Sledge::Sledge" /* Sledge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_52 /* Build configuration list for PBXNativeTarget "Sledge" */;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "Sledge" */;
 			buildPhases = (
-				OBJ_55 /* Sources */,
-				OBJ_57 /* Frameworks */,
+				OBJ_71 /* Sources */,
+				OBJ_73 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,15 +281,15 @@
 		};
 		"Sledge::SledgeTests" /* SledgeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_29 /* Build configuration list for PBXNativeTarget "SledgeTests" */;
+			buildConfigurationList = OBJ_34 /* Build configuration list for PBXNativeTarget "SledgeTests" */;
 			buildPhases = (
-				OBJ_32 /* Sources */,
-				OBJ_34 /* Frameworks */,
+				OBJ_37 /* Sources */,
+				OBJ_39 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_36 /* PBXTargetDependency */,
+				OBJ_41 /* PBXTargetDependency */,
 			);
 			name = SledgeTests;
 			productName = SledgeTests;
@@ -252,9 +298,9 @@
 		};
 		"Sledge::SwiftPMPackageDescription" /* SledgePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "SledgePackageDescription" */;
+			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "SledgePackageDescription" */;
 			buildPhases = (
-				OBJ_26 /* Sources */,
+				OBJ_31 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -279,14 +325,15 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_17 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"Sledge::SwiftPMPackageDescription" /* SledgePackageDescription */,
 				"Sledge::SledgeTests" /* SledgeTests */,
 				"Sledge::SemVer" /* SemVer */,
+				"Sledge::SafeAccessibleTests" /* SafeAccessibleTests */,
 				"Sledge::SafeAccessible" /* SafeAccessible */,
 				"Sledge::Sledge" /* Sledge */,
 				"Sledge::SledgePackageTests::ProductTarget" /* SledgePackageTests */,
@@ -295,65 +342,83 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_26 /* Sources */ = {
+		OBJ_31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_27 /* Package.swift in Sources */,
+				OBJ_32 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_32 /* Sources */ = {
+		OBJ_37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_33 /* SledgeTests.swift in Sources */,
+				OBJ_38 /* SledgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_42 /* Sources */ = {
+		OBJ_47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_43 /* SemVer.swift in Sources */,
+				OBJ_48 /* SemVer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_49 /* Sources */ = {
+		OBJ_54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_50 /* SafeAccessible.swift in Sources */,
-				DC1EC173205AC7C8001C0369 /* SafeIndexable.swift in Sources */,
-				DCA11D44205BB2FC00EB87D9 /* SafeCollection.swift in Sources */,
+				OBJ_55 /* SafeAccessibleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_55 /* Sources */ = {
+		OBJ_63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_56 /* Sledge.swift in Sources */,
+				OBJ_64 /* SafeAccessible.swift in Sources */,
+				OBJ_65 /* SafeCollection.swift in Sources */,
+				OBJ_66 /* SafeIndexable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* Sledge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_36 /* PBXTargetDependency */ = {
+		OBJ_41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sledge::Sledge" /* Sledge */;
-			targetProxy = DC1EC16E205AC44C001C0369 /* PBXContainerItemProxy */;
+			targetProxy = DC1EC176205C131E001C0369 /* PBXContainerItemProxy */;
 		};
-		OBJ_62 /* PBXTargetDependency */ = {
+		OBJ_58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Sledge::SafeAccessible" /* SafeAccessible */;
+			targetProxy = DC1EC177205C131E001C0369 /* PBXContainerItemProxy */;
+		};
+		OBJ_78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Sledge::SafeAccessibleTests" /* SafeAccessibleTests */;
+			targetProxy = DC1EC178205C131E001C0369 /* PBXContainerItemProxy */;
+		};
+		OBJ_79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sledge::SledgeTests" /* SledgeTests */;
-			targetProxy = DC1EC16F205AC44D001C0369 /* PBXContainerItemProxy */;
+			targetProxy = DC1EC179205C131E001C0369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_24 /* Debug */ = {
+		OBJ_29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -361,15 +426,6 @@
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
-		};
-		OBJ_25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
 		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -393,7 +449,16 @@
 			};
 			name = Debug;
 		};
-		OBJ_30 /* Debug */ = {
+		OBJ_30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -411,7 +476,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_31 /* Release */ = {
+		OBJ_36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -449,7 +514,7 @@
 			};
 			name = Release;
 		};
-		OBJ_40 /* Debug */ = {
+		OBJ_45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -471,7 +536,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_41 /* Release */ = {
+		OBJ_46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -493,7 +558,43 @@
 			};
 			name = Release;
 		};
-		OBJ_47 /* Debug */ = {
+		OBJ_52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Sledge.xcodeproj/SafeAccessibleTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SafeAccessibleTests;
+			};
+			name = Debug;
+		};
+		OBJ_53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Sledge.xcodeproj/SafeAccessibleTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SafeAccessibleTests;
+			};
+			name = Release;
+		};
+		OBJ_61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -515,7 +616,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_48 /* Release */ = {
+		OBJ_62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -537,7 +638,7 @@
 			};
 			name = Release;
 		};
-		OBJ_53 /* Debug */ = {
+		OBJ_69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -559,7 +660,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_54 /* Release */ = {
+		OBJ_70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -581,13 +682,13 @@
 			};
 			name = Release;
 		};
-		OBJ_60 /* Debug */ = {
+		OBJ_76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_61 /* Release */ = {
+		OBJ_77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -605,56 +706,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_23 /* Build configuration list for PBXNativeTarget "SledgePackageDescription" */ = {
+		OBJ_28 /* Build configuration list for PBXNativeTarget "SledgePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_24 /* Debug */,
-				OBJ_25 /* Release */,
+				OBJ_29 /* Debug */,
+				OBJ_30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_29 /* Build configuration list for PBXNativeTarget "SledgeTests" */ = {
+		OBJ_34 /* Build configuration list for PBXNativeTarget "SledgeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_30 /* Debug */,
-				OBJ_31 /* Release */,
+				OBJ_35 /* Debug */,
+				OBJ_36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_39 /* Build configuration list for PBXNativeTarget "SemVer" */ = {
+		OBJ_44 /* Build configuration list for PBXNativeTarget "SemVer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_40 /* Debug */,
-				OBJ_41 /* Release */,
+				OBJ_45 /* Debug */,
+				OBJ_46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_46 /* Build configuration list for PBXNativeTarget "SafeAccessible" */ = {
+		OBJ_51 /* Build configuration list for PBXNativeTarget "SafeAccessibleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_47 /* Debug */,
-				OBJ_48 /* Release */,
+				OBJ_52 /* Debug */,
+				OBJ_53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_52 /* Build configuration list for PBXNativeTarget "Sledge" */ = {
+		OBJ_60 /* Build configuration list for PBXNativeTarget "SafeAccessible" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_53 /* Debug */,
-				OBJ_54 /* Release */,
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_59 /* Build configuration list for PBXAggregateTarget "SledgePackageTests" */ = {
+		OBJ_68 /* Build configuration list for PBXNativeTarget "Sledge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_60 /* Debug */,
-				OBJ_61 /* Release */,
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_75 /* Build configuration list for PBXAggregateTarget "SledgePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_76 /* Debug */,
+				OBJ_77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
