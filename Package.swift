@@ -16,6 +16,9 @@ let package = Package(
         .library(
             name: "SafeAccessible",
             targets: ["SafeAccessible"]),
+        .library(
+            name: "Generator",
+            targets: ["Generator"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -35,6 +38,10 @@ let package = Package(
             name: "SafeAccessible",
             dependencies: [],
             path: "Sources/SafeAccessible"),
+        .target(
+            name: "Generator",
+            dependencies: [],
+            path: "Sources/Generator"),
         .testTarget(
             name: "SledgeTests",
             dependencies: ["Sledge"]),
@@ -42,5 +49,9 @@ let package = Package(
             name: "SafeAccessibleTests",
             dependencies: ["SafeAccessible"],
             path: "Tests/SafeAccessibleTests"),
+        .testTarget(
+            name: "GeneratorTests",
+            dependencies: ["Generator"],
+            path: "Tests/GeneratorTests"),
     ]
 )
