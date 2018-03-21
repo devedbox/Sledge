@@ -30,7 +30,6 @@
 		OBJ_54 /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* GeneratorTests.swift */; };
 		OBJ_56 /* Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::Generator::Product" /* Generator.framework */; };
 		OBJ_64 /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SemVer.swift */; };
-		OBJ_70 /* _main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* _main.swift */; };
 		OBJ_77 /* SafeAccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SafeAccessibleTests.swift */; };
 		OBJ_79 /* SafeAccessible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::SafeAccessible::Product" /* SafeAccessible.framework */; };
 		OBJ_86 /* SafeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SafeAccessible.swift */; };
@@ -89,7 +88,6 @@
 		OBJ_11 /* SafeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessible.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		OBJ_13 /* SafeIndexable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeIndexable.swift; sourceTree = "<group>"; };
-		OBJ_15 /* _main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _main.swift; sourceTree = "<group>"; };
 		OBJ_17 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
 		OBJ_20 /* SafeAccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessibleTests.swift; sourceTree = "<group>"; };
 		OBJ_22 /* GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 		OBJ_14 /* Generator */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* _main.swift */,
 				DCA11D5D206295DA00EB87D9 /* Generator.swift */,
 			);
 			name = Generator;
@@ -475,7 +472,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_70 /* _main.swift in Sources */,
 				DCA11D5E206295DA00EB87D9 /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
