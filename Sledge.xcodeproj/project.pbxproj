@@ -99,7 +99,7 @@
 		"Sledge::SafeAccessible::Product" /* SafeAccessible.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafeAccessible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::SafeAccessibleTests::Product" /* SafeAccessibleTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SafeAccessibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::SemVer::Product" /* SemVer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SemVer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Sledge::Sledge::Product" /* Sledge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sledge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sledge::Sledge::Product" /* Sledge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sledge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sledge::SledgeTests::Product" /* SledgeTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SledgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
