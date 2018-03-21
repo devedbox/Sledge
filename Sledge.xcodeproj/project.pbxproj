@@ -23,6 +23,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		DCA11D5E206295DA00EB87D9 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA11D5D206295DA00EB87D9 /* Generator.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_44 /* SledgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SledgeTests.swift */; };
 		OBJ_46 /* Sledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sledge::Sledge::Product" /* Sledge.framework */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCA11D5D206295DA00EB87D9 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SafeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAccessible.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		OBJ_13 /* SafeIndexable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeIndexable.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_15 /* _main.swift */,
+				DCA11D5D206295DA00EB87D9 /* Generator.swift */,
 			);
 			name = Generator;
 			path = Sources/Generator;
@@ -473,6 +476,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_70 /* _main.swift in Sources */,
+				DCA11D5E206295DA00EB87D9 /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
