@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::Generator"
+               BuildableName = "Generator.framework"
+               BlueprintName = "Generator"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Sledge::SafeAccessible"
                BuildableName = "SafeAccessible.framework"
                BlueprintName = "SafeAccessible"
@@ -64,6 +78,16 @@
                BlueprintIdentifier = "Sledge::SledgeTests"
                BuildableName = "SledgeTests.xctest"
                BlueprintName = "SledgeTests"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::GeneratorTests"
+               BuildableName = "GeneratorTests.xctest"
+               BlueprintName = "GeneratorTests"
                ReferencedContainer = "container:Sledge.xcodeproj">
             </BuildableReference>
          </TestableReference>
