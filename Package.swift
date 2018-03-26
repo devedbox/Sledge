@@ -11,6 +11,9 @@ let package = Package(
             name: "Sledge",
             targets: ["Sledge"]),
         .library(
+            name: "Core",
+            targets: ["Core"]),
+        .library(
             name: "SemVer",
             targets: ["SemVer"]),
         .library(
@@ -31,6 +34,10 @@ let package = Package(
             name: "Sledge",
             dependencies: []),
         .target(
+            name: "Core",
+            dependencies: [],
+            path: "Sources/Core"),
+        .target(
             name: "SemVer",
             dependencies: [],
             path: "Sources/SemVer"),
@@ -40,7 +47,7 @@ let package = Package(
             path: "Sources/SafeAccessible"),
         .target(
             name: "Generator",
-            dependencies: [],
+            dependencies: ["Core"],
             path: "Sources/Generator"),
         .testTarget(
             name: "SledgeTests",
