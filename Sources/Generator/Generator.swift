@@ -5,9 +5,7 @@
 //  Created by devedbox on 2018/3/21.
 //
 
-// MARK: - EmptyInitializable.
-
-public protocol EmptyInitializable { init() }
+import Core
 
 // MARK: - GeneratorProtocol.
 
