@@ -41,7 +41,11 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
       name: "Sledge",
-      dependencies: []),
+      dependencies: [
+        "POSIX",
+        "StringPlus",
+        "CollectionPlus"
+      ]),
     .target(
       name: "Core",
       dependencies: [],
