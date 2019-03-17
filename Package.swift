@@ -22,6 +22,9 @@ let package = Package(
     .library(
       name: "Generator",
       targets: ["Generator"]),
+    .library(
+      name: "StringPlus",
+      targets: ["StringPlus"]),
     ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -49,6 +52,14 @@ let package = Package(
       name: "Generator",
       dependencies: ["Core"],
       path: "Sources/Generator"),
+    .target(
+      name: "StringPlus",
+      dependencies: [],
+      path: "Sources/Plus/String+"),
+    .target(
+      name: "POSIX",
+      dependencies: [],
+      path: "Sources/POSIX"),
     .testTarget(
       name: "SledgeTests",
       dependencies: ["Sledge"]),
@@ -60,5 +71,9 @@ let package = Package(
       name: "GeneratorTests",
       dependencies: ["Generator"],
       path: "Tests/GeneratorTests"),
+    .testTarget(
+      name: "StringPlusTests",
+      dependencies: ["StringPlus"],
+      path: "Tests/String+Tests"),
     ]
 )
