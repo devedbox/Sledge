@@ -25,6 +25,9 @@ let package = Package(
     .library(
       name: "StringPlus",
       targets: ["StringPlus"]),
+    .library(
+      name: "CollectionPlus",
+      targets: ["CollectionPlus"]),
     ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -56,6 +59,10 @@ let package = Package(
       name: "StringPlus",
       dependencies: [],
       path: "Sources/Plus/String+"),
+    .target(
+      name: "CollectionPlus",
+      dependencies: [],
+      path: "Sources/Plus/Collection+"),
     .target(
       name: "POSIX",
       dependencies: [],
