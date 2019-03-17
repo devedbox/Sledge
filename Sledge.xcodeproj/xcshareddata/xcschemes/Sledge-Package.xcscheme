@@ -14,62 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sledge::Core"
-               BuildableName = "Core.framework"
-               BlueprintName = "Core"
-               ReferencedContainer = "container:Sledge.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sledge::StringPlus"
-               BuildableName = "StringPlus.framework"
-               BlueprintName = "StringPlus"
-               ReferencedContainer = "container:Sledge.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sledge::Sledge"
-               BuildableName = "Sledge.framework"
-               BlueprintName = "Sledge"
-               ReferencedContainer = "container:Sledge.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sledge::SafeAccessible"
-               BuildableName = "SafeAccessible.framework"
-               BlueprintName = "SafeAccessible"
-               ReferencedContainer = "container:Sledge.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Sledge::SemVer"
                BuildableName = "SemVer.framework"
                BlueprintName = "SemVer"
@@ -98,9 +42,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sledge::POSIX"
-               BuildableName = "POSIX.framework"
-               BlueprintName = "POSIX"
+               BlueprintIdentifier = "Sledge::Core"
+               BuildableName = "Core.framework"
+               BlueprintName = "Core"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::StringPlus"
+               BuildableName = "StringPlus.framework"
+               BlueprintName = "StringPlus"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::SafeAccessible"
+               BuildableName = "SafeAccessible.framework"
+               BlueprintName = "SafeAccessible"
                ReferencedContainer = "container:Sledge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -115,6 +87,34 @@
                BlueprintIdentifier = "Sledge::Generator"
                BuildableName = "Generator.framework"
                BlueprintName = "Generator"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::Sledge"
+               BuildableName = "Sledge.framework"
+               BlueprintName = "Sledge"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::POSIX"
+               BuildableName = "POSIX.framework"
+               BlueprintName = "POSIX"
                ReferencedContainer = "container:Sledge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -156,6 +156,16 @@
                ReferencedContainer = "container:Sledge.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Sledge::StringPlusTests"
+               BuildableName = "StringPlusTests.xctest"
+               BlueprintName = "StringPlusTests"
+               ReferencedContainer = "container:Sledge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -173,9 +183,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Sledge::Core"
-            BuildableName = "Core.framework"
-            BlueprintName = "Core"
+            BlueprintIdentifier = "Sledge::SemVer"
+            BuildableName = "SemVer.framework"
+            BlueprintName = "SemVer"
             ReferencedContainer = "container:Sledge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
