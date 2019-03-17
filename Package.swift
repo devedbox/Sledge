@@ -23,6 +23,9 @@ let package = Package(
       name: "Generator",
       targets: ["Generator"]),
     .library(
+      name: "POSIX",
+      targets: ["POSIX"]),
+    .library(
       name: "StringPlus",
       targets: ["StringPlus"]),
     .library(
