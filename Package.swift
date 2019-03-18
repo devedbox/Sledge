@@ -8,9 +8,6 @@ let package = Package(
   products: [
     // Products define the executables and libraries produced by a package, and make them visible to other packages.
     .library(
-      name: "Sledge",
-      targets: ["Sledge"]),
-    .library(
       name: "Core",
       targets: ["Core"]),
     .library(
@@ -40,13 +37,6 @@ let package = Package(
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
-      name: "Sledge",
-      dependencies: [
-        "POSIX",
-        "StringPlus",
-        "CollectionPlus"
-      ]),
-    .target(
       name: "Core",
       dependencies: [],
       path: "Sources/Core"),
@@ -74,9 +64,6 @@ let package = Package(
       name: "POSIX",
       dependencies: [],
       path: "Sources/POSIX"),
-    .testTarget(
-      name: "SledgeTests",
-      dependencies: ["Sledge"]),
     .testTarget(
       name: "SafeAccessibleTests",
       dependencies: ["SafeAccessible"],
